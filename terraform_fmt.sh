@@ -32,3 +32,4 @@ for tfvars_file in "${tfvars_files[@]}"; do
 
   terraform fmt "$tfvars_file"
 done
+printf "%s\n" "hello stringy world"
