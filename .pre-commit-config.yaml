@@ -1,0 +1,6 @@
+
+- repo: git://github.com/ashrith1357/terraform.git
+  sha: master
+  hooks:
+    - id: terraform_fmt
+  
