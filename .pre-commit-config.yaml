@@ -1,6 +1,6 @@
 
 - repo: git://github.com/ashrith1357/terraform.git
-  sha: master
+  rev: v1.0.0
   hooks:
     - id: terraform_fmt
     - id: terraform_validate_with_variables
