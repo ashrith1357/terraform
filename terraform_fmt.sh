@@ -20,7 +20,7 @@ done
 
 for path_uniq in $(echo "${paths[*]}" | tr ' ' '\n' | sort -u); do
   path_uniq="${path_uniq//__REPLACED__SPACE__/ }"
-
+  printf "%s\n" "hello stringy world"
   pushd "$path_uniq" > /dev/null
   terraform fmt
   popd > /dev/null
@@ -32,4 +32,4 @@ for tfvars_file in "${tfvars_files[@]}"; do
 
   terraform fmt "$tfvars_file"
 done
-printf "%s\n" "hello stringy world"
+
