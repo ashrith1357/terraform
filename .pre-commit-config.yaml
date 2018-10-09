@@ -3,4 +3,4 @@
   sha: master
   hooks:
     - id: terraform_fmt
-  
+    - id: terraform_validate_with_variables
