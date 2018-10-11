@@ -13,3 +13,11 @@
   language: script
   files: (\.tf|\.tfvars)$
   exclude: \.terraform\/.*$
+
+- id: detect-aws-credentials
+  name: detect-aws-credentials
+  description: detect
+  entry: detect-aws-credentials.sh
+  language: script
+  files: (\.tf|\.tfvars)$
+  exclude: \.terraform\/.*$
